@@ -6,10 +6,9 @@ export default {
 	  extend: {
 		colors: {
 		  light: {
-			gradient1: '#f12711', // Rojo vibrante
-			gradient2: '#f5af19', // Amarillo
-			gradient3: '#22c1c3', // Turquesa
-			gradient4: '#7b4397', // Púrpura
+			gradient1: '#ffffff', // Blanco
+			gradient2: '#a8dadc', // Azul claro
+			gradient3: '#00d4ff', // Azul medio
 			body: '#333333', // Color del cuerpo (Texto general)
 			heading: '#1a202c', // Color para títulos (h1, h2, etc)
 			strong: '#e02cbf', // Color para texto fuerte (strong)
@@ -18,9 +17,8 @@ export default {
 		  },
 		  dark: {
 			gradient1: '#000000', // Negro
-			gradient2: '#4b0082', // Índigo
-			gradient3: '#800080', // Morado
-			gradient4: '#2b193d', // Morado oscuro
+			gradient2: '#1e3a8a', // Azul oscuro (Índigo)
+			gradient3: '#00d4ff', // Azul neón brillante
 			body: '#e2e8f0', // Color del cuerpo en modo oscuro
 			heading: '#edf2f7', // Color para títulos en modo oscuro
 			strong: '#f97316', // Color para texto fuerte (strong) en modo oscuro
