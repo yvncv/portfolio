@@ -16,11 +16,17 @@ import Mongo from "./icons/Mongo.astro"
 import Mysql from "./icons/Mysql.astro"
 import Laravel from "./icons/Laravel.astro"
 import NodeJS from "./icons/NodeJS.astro"
+import Firebase from "./icons/Firebase.astro"
 
 const TAGS = {
   // Frontend
   REACT: {
     name: "ReactJS",
+    class: "bg-[#61DBFB] text-white",
+    icon: React,
+  },
+  REACTN: {
+    name: "ReactNative",
     class: "bg-[#61DBFB] text-white",
     icon: React,
   },
@@ -91,6 +97,11 @@ const TAGS = {
     class: "bg-[#7ab068] text-white",
     icon: NodeJS,
   },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#ff9100] text-white",
+    icon: Firebase,
+  },
 }
 
 const PROJECTS = [
@@ -134,6 +145,14 @@ const PROJECTS = [
     image: "/projects/proyecto-arqui.png",
     tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.MONGODB, TAGS.NODE],
   },
+  {
+    title: "E-Wallet",
+    description: "Proyecto del curso de Sistemas Móviles y Plataformas Menores, trata de una aplicación móvil que permite a los usuarios de la app realizar transacciones, ya sea comprar productos o realizar transferencias con otros usuarios.",
+    link: "",
+    github: "https://github.com/yvncv/E-Wallet",
+    image: "/projects/proyecto-ewallet.png",
+    tags: [TAGS.REACTN, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.NODE, TAGS.FIREBASE],
+  },
 ]
 
 ---
@@ -144,7 +163,7 @@ const PROJECTS = [
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-            <img alt="Imagen de proyecto." class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+            <img alt="Imagen de proyecto." class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" /*loading="lazy"*/ src={image} />
           </div>
         </div>
 
