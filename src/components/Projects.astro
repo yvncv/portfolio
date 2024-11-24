@@ -4,105 +4,176 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import React from "./icons/React.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import CascadeStyleSheets from "./icons/CascadeStyleSheets.astro"
+import BootStrap from "./icons/BootStrap.astro"
+import Php from "./icons/Php.astro"
+import Vue from "./icons/Vue.astro"
+import Vite from "./icons/Vite.astro"
+import Mongo from "./icons/Mongo.astro"
+import Mysql from "./icons/Mysql.astro"
+import Laravel from "./icons/Laravel.astro"
+import NodeJS from "./icons/NodeJS.astro"
 
 const TAGS = {
+  // Frontend
+  REACT: {
+    name: "ReactJS",
+    class: "bg-[#61DBFB] text-white",
+    icon: React,
+  },
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
     icon: NextJS,
   },
+  VUE: {
+    name: "Vue",
+    class: "bg-[#42B883] text-white",
+    icon: Vue,
+  },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#38BDF8] text-white",
     icon: Tailwind,
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F7DF1E] text-black",
+    icon: JavaScript,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#3178C6] text-white",
+    icon: TypeScript,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#1572B6] text-white",
+    icon: CascadeStyleSheets,
+  },
+  VITE: {
+    name: "Vite",
+    class: "bg-[#646CFF] text-white",
+    icon: Vite,
+  },
+
+  // Backend
+  PHP: {
+    name: "Php",
+    class: "bg-[#8993BE] text-white",
+    icon: Php,
+  },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-[#FF2D20] text-white",
+    icon: Laravel,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#00758F] text-white",
+    icon: Mysql,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#47A248] text-white",
+    icon: Mongo,
+  },
+  BOOTSTRAP: {
+    name: "BootStrap",
+    class: "bg-[#563D7C] text-white",
+    icon: BootStrap,
+  },
+  NODE: {
+    name: "NodeJS",
+    class: "bg-[#7ab068] text-white",
+    icon: NodeJS,
+  },
 }
+
 const PROJECTS = [
   {
     title: "SCGACURP",
     description: "Sistema de Control, Gestión y Administración de Conferencias para la Universidad Ricardo Palma.",
     link: "",
-    github: "",
+    github: "https://github.com/yvncv/frontURP",
     image: "/projects/",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.NODE],
   },
   {
     title: "SWGAOTC",
     description: "Sistema Web para Mejorar la Gestión Administrativa y Operativa de la Tienda de Tejidos con Crochet, ElsaVal.",
     link: "",
-    github: "",
+    github: "https://github.com/yvncv/ElsaVal-Front",
     image: "/projects/",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.CSS, TAGS.PHP, TAGS.LARAVEL, TAGS.MONGODB, TAGS.NODE],
   },
   {
     title: "SWOJHS",
     description: "Sistema Web para la Mejora de la Gestión Operativa en la Empresa JHS.",
     link: "",
-    github: "",
+    github: "https://github.com/yvncv/swjhs-frontend",
     image: "/projects/",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.VUE,TAGS.VITE, TAGS.TYPESCRIPT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.PHP, TAGS.MYSQL, TAGS.NODE],
   },
   {
-    title: "SWGCMNP",
-    description: "Sistema Web para la Gestión de Concursos de Marinera Norteña Peruana de la Academia Tusuy Perú.",
+    title: "Estantería Virtual de la BVI",
+    description: "Sistema web de estantería virtual para los libros presentes en el sumillado de los cursos de todas las carreras de ingeniería en la URP.",
     link: "",
-    github: "",
+    github: "https://github.com/yvncv/BVI-ESTANTERIA",
     image: "/projects/",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.MONGODB, TAGS.NODE],
   },
 ]
+
 ---
 
 <div class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Imagen de proyecto." class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img alt="Imagen de proyecto." class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <li>
+                  <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-              
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
-        </footer>
-    </div>
-  </div>
-</article>
+          <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+          <footer class="flex items-end justify-start mt-4 gap-x-4">
+            {github && (
+              <LinkButton href={github}>
+                <GitHub class="size-6" />
+                Code
+              </LinkButton>
+            )}
+            {link && (
+              <LinkButton href={link}>
+                <Link class="size-4" />
+                Preview
+              </Link>
+            )}
+          </footer>
+        </div>
+      </article>
     ))
   }
 </div>
-
-
-
