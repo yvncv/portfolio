@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Mayo 2024",
+    title: "Practicante de Ingeniería Informática",
+    company: "Biblioteca Virtual de Ingeniería, Universidad Ricardo Palma",
+    description:
+      "Desarrollo de un sistema web de estantería virtual para los libros presentes en el sumillado de los cursos de todas las carreras de ingeniería en la URP.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
