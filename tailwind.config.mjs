@@ -7,23 +7,13 @@ export default {
 		colors: {
 		  light: {
 			gradient1: '#ffffff', // Blanco
-			gradient2: '#a8dadc', // Azul claro
-			gradient3: '#00d4ff', // Azul medio
-			body: '#333333', // Color del cuerpo (Texto general)
-			heading: '#1a202c', // Color para títulos (h1, h2, etc)
-			strong: '#e02cbf', // Color para texto fuerte (strong)
-			'light-text': '#2d2d2d',  // Color de texto en modo claro
-			'light-bg': '#f0f0f0',    // Fondo claro
+			gradient2: '#f1f1f1', // Azul claro
+			gradient3: '#e0e0e0', // Azul medio
 		  },
 		  dark: {
 			gradient1: '#000000', // Negro
-			gradient2: '#1e3a8a', // Azul oscuro (Índigo)
-			gradient3: '#00d4ff', // Azul neón brillante
-			body: '#e2e8f0', // Color del cuerpo en modo oscuro
-			heading: '#edf2f7', // Color para títulos en modo oscuro
-			strong: '#f97316', // Color para texto fuerte (strong) en modo oscuro
-			'dark-text': '#e0e0e0',   // Color de texto en modo oscuro
-			'dark-bg': '#333333',     // Fondo oscuro
+			gradient2: '#121212', // Azul oscuro (Índigo)
+			gradient3: '#1a1a1a', // Azul neón brillante
 		  },
 		},
 	  },
